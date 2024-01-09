@@ -1,0 +1,35 @@
+p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding-left: 200px;
+}
+
+span.command {
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+span.score {
+    padding: 10px;
+    margin: 10px;
+    padding-left: 200px;
+}
+
+.column-left {
+    padding-top: 100px;
+    width: 50%;
+    float: right;
+}
+
+.column-right {
+    width: 50%;
+    padding-top: 0;
+    float: left;
+}
+
+canvas {
+    padding-left: 200px;
+}

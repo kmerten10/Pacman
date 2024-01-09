@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        margin: 0;
+        background-color: black;
+    }
+</style>
+
+
+<head>
+    <title>Pacman</title>
+    <link rel="stylesheet" href="styles.css">
+    <audio autoplay id="player" src="./img/pacman_beginning.wav"></audio>
+    <div>
+        <button onclick="document.getElementById('player').play()">Play</button>
+        <button onclick="document.getElementById('player').pause()">Pause</button>
+        <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+        <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+    </div>
+</head>
+
+<body>
+    <p style="color: white; font-family: sans-serif; font-size: 60px; margin-bottom: 6px;">Pac-Man</p>
+    <div class="column-left">
+        <p><span class="command">w</span> = Up</p>
+        <p><span class="command">s</span> = Down</p>
+        <p><span class="command">a</span> = Left</p>
+        <p><span class="command">d</span> = Right</p>
+    </div>
+
+
+    <div class="column-right">
+        <div style="color: white; font-family: sans-serif; font-size: 14px; margin-bottom: 6px;">
+            <span class="score">Score: </span><span id="scoreEl">0</span>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script src=" index.js"></script>
+</body>
+
+</html>
